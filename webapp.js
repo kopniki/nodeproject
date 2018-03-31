@@ -40,8 +40,15 @@ app.get('/about',(req,res)=>{
 	//res.send('Hello Express');
 	res.render('about.hbs' ,{
 		pagetitle:'ABOUT PAGE',
-		wcmsg:'welcome to about page',
-	copyright:new Date().getFullYear()
+		wcmsg:'welcome to about page'
+	});
+});
+
+app.get('/portfolio',(req,res)=>{
+	//res.send('Hello Express');
+	res.render('portfolio.hbs' ,{
+		pagetitle:'PORTFOLIO PAGE',
+		wcmsg:'welcome to portfolio page'
 	});
 });
 
